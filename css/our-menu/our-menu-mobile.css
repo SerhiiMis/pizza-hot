@@ -1,0 +1,39 @@
+.title-menu {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  width: 100%;
+  background-color: rgba(185, 230, 26, 0.1);
+  border-radius: 16px;
+}
+.pizza-title {
+  text-align: center;
+}
+
+.pizza-image {
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.pizza-description {
+  padding: 15px;
+}
+
+.menu-button {
+  display: flex;
+  margin: 0 auto;
+  border: solid 1px;
+  border-radius: 5px;
+  width: 48px;
+  justify-content: center;
+}
