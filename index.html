@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza-hot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="hero"></div>
+    <div id="about-us"></div>
+    <div id="our-menu"></div>
+    <div id="footer"></div>
+    <script>
+      async function loadHTML(selector, file) {
+        const response = await fetch(file);
+        const text = await response.text();
+        document.querySelector(selector).innerHTML = text;
+      }
+
+      loadHTML("#header", "./pages/header.html");
+      loadHTML("#hero", "./pages/hero.html");
+      loadHTML("#about-us", "./pages/about-us.html");
+      loadHTML("#our-menu", "./pages/our-menu.html");
+      loadHTML("#footer", "./pages/footer.html");
+    </script>
+  </body>
+</html>
