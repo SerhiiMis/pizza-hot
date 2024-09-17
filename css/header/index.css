@@ -1,0 +1,31 @@
+@import url("./backdrop.css");
+
+@media screen and (max-width: 768px) {
+  .header-menu,
+  .address {
+    display: none;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  padding: 16px 0;
+}
+
+.logo-highlight {
+  color: rgb(220, 59, 0);
+}

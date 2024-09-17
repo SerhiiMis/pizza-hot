@@ -30,7 +30,7 @@ button {
   background: transparent;
   display: inline-block;
   padding: 0;
-  border: 0;
+  border: none;
 }
 
 img {
